@@ -3,8 +3,14 @@ angular.module('appRoutes', []).config(function($stateProvider, $urlRouterProvid
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('home', {
+        .state('login',{
             url: '/',
+            templateUrl: 'views/login.html',
+            controller: 'MainController as mainCtrl'
+
+        })
+        .state('home', {
+            url: '/home',
             templateUrl: 'views/home.html',
             controller: 'MainController as mainCtrl'
         })
