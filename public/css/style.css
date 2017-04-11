@@ -105,6 +105,8 @@ body {
 
 ul.nav.navbar-nav li {
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 ul.nav.navbar-nav li a {
@@ -112,6 +114,7 @@ ul.nav.navbar-nav li a {
     color: #fff;
     padding: 3px 10px;
     display: block;
+    text-transform: uppercase;
 }
 
 ul.nav.navbar-nav li a:hover {
@@ -144,6 +147,7 @@ ul li {
 .login-page {
     display: flex;
     justify-content: center;
+    background: rgba(226, 225, 224, 0.37);
     height: 100vh;
     width: 100vw;
     align-items: center;
@@ -204,4 +208,22 @@ a.btn {
 
 .card-full {
     width: 100%;
+}
+
+i.hot {
+    color: #a71808;
+}
+
+i.notif {
+    color: #4aa;
+}
+
+i.notif::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ea7731;
+    position: absolute;
+    margin-left: 20px;
 }

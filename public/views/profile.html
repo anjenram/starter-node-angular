@@ -4,13 +4,13 @@
 		<div class="navbar-header_nav-btn">
 			<ul>
 				<li>
-					<a href="#"><i class="material-icons">notifications_none</i></a>
+					<a href="#"><i class="material-icons notif">notifications_none</i></a>
 				</li>
 				<li>
-					<a href="#"><i class="material-icons">whatshot</i></a>
+					<a href="#"><i class="material-icons hot">whatshot</i></a>
 				</li>
 				<li>
-					<a href=""><i class="material-icons">exit_to_app</i></a>
+					<a href=""><i class="material-icons">exit_to_app</i> </a>
 				</li>
 			</ul>
 
@@ -21,17 +21,17 @@
 	<div class="sidebar">
 		<ul class="nav navbar-nav">
 			<li><a ui-sref="home">Home</a></li>
-			<li><a ui-sref="nerds">Nerds</a></li>
-			<li><a ui-sref="geeks">Geeks</a></li>
+			<li><a ui-sref="profile">Profile</a></li>
+			<li><a ui-sref="settings">Settings</a></li>
 		</ul>
 
 	</div>
 
 	<div class="content">
-		<div class="card">
-			<h1>Nerds and Proud</h1>
-			<p>{{ nerdCtrl.tagline }}</p>
+		<div class="card card-full">
+			<h2>{{profileCtrl.tagline }}</h2>
 		</div>
 	</div>
 
+</div>
 </div>
