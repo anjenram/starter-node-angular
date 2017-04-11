@@ -1,22 +1,16 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-5">
-			<div class="jumbotron">
-				<form action="" class="login-form">
-					<div class="form-group">
-						<label for="email">E-mail:</label>
-						<input type="email" id="email" class="form-control" placeholder="E-mail">
-					</div>
-					<div class="form-group">
-						<label for="password">Password:</label>
-						<input type="password" id="password" class="form-control" placeholder="Password">
-					</div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-default">Log in</button>
-						<a href="/reg" class="btn btn-info">Sign in</a>
-					</div>
-				</form>
-			</div>
+<div class="login-page">
+	<form action="" class="login-form">
+		<div class="form-group label-static">
+			<label for="i5" class="control-label">E-mail</label>
+			<input type="email" class="form-control" id="i5">
 		</div>
-	</div>
-</div> 
+		<div class="form-group label-static">
+			<label for="Pass" class="control-label">Password:</label>
+			<input type="password" class="form-control" id="Pass">
+		</div>
+		<div class="form-group">
+			<a type="submit" class="btn btn-raised btn-default">Log in</a>
+			<a href="/reg" class="btn btn-raised btn-info">Sign in</a>
+		</div>
+	</form>
+</div>

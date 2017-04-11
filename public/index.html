@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<base href="/">
 
 	<title>Starter Node and Angular</title>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- custom styles -->
 
 	<!-- JS -->
 	<script src="libs/angular/angular.min.js"></script>
@@ -23,7 +24,9 @@
 	<script src="js/appRoutes.js"></script>
 	<script src="js/app.js"></script>
 </head>
+
 <body ng-app="sampleApp">
-	<div ui-view></div>
+	<div ui-view class="ng-view"></div>
 </body>
+
 </html>

@@ -1,1 +1,207 @@
-body { padding-top:30px; }
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row-content {
+    height: calc(100% - 80px);
+}
+
+.ng-view {
+    width: 100%;
+}
+
+.navbar-header {
+    padding: 15px 15px;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.navbar-header_nav-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    color: #4aa;
+}
+
+.navbar-brand:hover {
+    -webkit-transition: color 1.5s ease-in-out;
+    -moz-transition: color 1.5s ease-in-out;
+    -ms-transition: color 1.5s ease-in-out;
+    -o-transition: color 1.5s ease-in-out;
+    transition: color 1.5s ease-in-out;
+    color: #000;
+}
+
+.navbar-header_nav-btn i {
+    font-size: 30px;
+}
+
+.navbar-header_nav-btn ul li {
+    display: inline-block;
+}
+
+.navbar-header_nav-btn ul li a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px !important;
+}
+
+.sidebar {
+    background: rgba(85, 145, 255, 0.52);
+    -ms-flex: 0 150px;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    box-flex: 0;
+    height: calc(100vh - 80px);
+    min-width: 150px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+ul.nav.navbar-nav li {
+    text-align: center;
+}
+
+ul.nav.navbar-nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 3px 10px;
+    display: block;
+}
+
+ul.nav.navbar-nav li a:hover {
+    background: rgba(80, 71, 216, 0.69);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    transition: background 1.5s ease-in-out, box-shadow .5s;
+}
+
+.content {
+    width: calc(100vw - 150px);
+    background: rgba(226, 225, 224, 0.37);
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #fff;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 240px;
+    padding: 30px 60px;
+    background: #fff;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.form-group label {
+    display: block
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-bottom: 2px #c3c3c3 solid;
+}
+
+.form-group .btn {
+    text-align: center;
+    height: 32px;
+    background: #fff;
+    border: none;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px;
+    padding: 5px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px
+}
+
+.btn:hover {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+a.btn {
+    text-decoration: none !important;
+}
+
+.btn-default {
+    background: #fff !important;
+}
+
+.btn-info {
+    color: #fff;
+    background: rgba(68, 170, 170, 0.82) !important;
+}
+
+.card-full {
+    width: 100%;
+}
