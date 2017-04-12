@@ -1,16 +1,17 @@
 <div class="login-page">
-	<form action="" class="login-form">
+	<!--<form action="" class="login-form" method="POST">-->
+	<form class="login-form" ng-submit="signup()">
 		<div class="form-group label-static">
 			<label for="i5" class="control-label">E-mail</label>
-			<input type="email" class="form-control" id="i5">
+			<input type="email" class="form-control" id="i5" name="email" ng-model="email">
 		</div>
 		<div class="form-group label-static">
 			<label for="Pass" class="control-label">Password:</label>
-			<input type="password" class="form-control" id="Pass">
+			<input type="password" class="form-control" id="Pass" name="password" ng-model="password">
 		</div>
 		<div class="form-group">
-			<a type="submit" class="btn btn-raised btn-default">Log in</a>
-			<a href="/reg" class="btn btn-raised btn-info">Sign in</a>
+			<button type="submit" class="btn btn-raised btn-default">Log in</button>
+			<a ui-sref="registration" class="btn btn-raised btn-info">Sign in</a>
 		</div>
 	</form>
 </div>

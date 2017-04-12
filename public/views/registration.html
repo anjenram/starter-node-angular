@@ -1,0 +1,26 @@
+<div class="login-page ">
+    <!--<form action="#!/registration" class="login-form registration" method="POST">-->
+    <form class="login-form registration" ng-submit="signin()">
+
+        <div class="form-group label-static">
+            <label for="name" class="control-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" ng-model="name">
+        </div>
+        <div class="form-group label-static">
+            <label for="Username" class="control-label">Username</label>
+            <input type="text" class="form-control" id="Username" name="username" ng-model="username">
+        </div>
+        <div class="form-group label-static">
+            <label for="i5" class="control-label">E-mail</label>
+            <input type="email" class="form-control" id="i5" name="email" ng-model="email">
+        </div>
+        <div class="form-group label-static">
+            <label for="Pass" class="control-label">Password:</label>
+            <input type="password" class="form-control" id="Pass" name="password" ng-model="password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-raised btn-default">Sign in</button>
+            <a ui-sref="login" class="btn btn-raised btn-info">Back</a>
+        </div>
+    </form>
+</div>
